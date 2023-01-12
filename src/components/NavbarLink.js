@@ -45,14 +45,14 @@ function NavbarLink({ icon: Icon, label, path, active, onClick }) {
 
 export function NavbarMinimalColored({links}) {
   const [active, setActive] = useState();
-  let index = 0;
+  const [index, setIndex] = useState(0);
 
   React.useEffect(() => (
     links.map(data => {
       if (data.path === window.location.pathname) {
         setActive(index);
       }
-      index++;
+      setIndex(index + 1);
     })
   ),[links]);
 
