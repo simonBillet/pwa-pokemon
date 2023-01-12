@@ -47,7 +47,7 @@ export function NavbarMinimalColored({links}) {
   const [active, setActive] = useState();
 
   React.useEffect(() => (
-    links.map((data, index) => {
+    links.map(function(data, index) {
       if (data.path === window.location.pathname) {
         setActive(index);
       }
