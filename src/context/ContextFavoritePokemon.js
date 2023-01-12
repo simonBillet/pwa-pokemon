@@ -1,4 +1,4 @@
-/*mport React from 'react';
+import React from 'react';
 
 const FavoritePokemonContext = React.createContext();
 
@@ -17,7 +17,7 @@ const FavoritePokemonProvider = ({ children }) => {
   }
 
   const isFavorite = (pokemonId) => {
-    listPokemon.map(id => {
+    listPokemon.forEach(function(id) {
       if (id === pokemonId) {
         return true;
       }
@@ -37,4 +37,3 @@ const FavoritePokemonProvider = ({ children }) => {
 }
 
 export { FavoritePokemonProvider, FavoritePokemonContext as default };
-*/
