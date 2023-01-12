@@ -11,10 +11,10 @@ import {IconFlame, IconHeart, IconHome2, IconSearch} from "@tabler/icons";
 
 function App() {
   const links = [
-    { icon: IconHome2, label: 'Accueil', path: '/' },
-    { icon: IconSearch, label: 'Recherche', path: '/search/' },
-    { icon: IconHeart, label: 'Favoris', path: '/favorites/' },
-    { icon: IconFlame, label: 'Types', path: '/types/' },
+    { id: 0, icon: IconHome2, label: 'Accueil', path: '/' },
+    { id: 1, icon: IconSearch, label: 'Recherche', path: '/search/' },
+    { id: 2, icon: IconHeart, label: 'Favoris', path: '/favorites/' },
+    { id: 3, icon: IconFlame, label: 'Types', path: '/types/' },
   ];
 
   return(
