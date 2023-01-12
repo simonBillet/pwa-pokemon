@@ -1,0 +1,53 @@
+html, body {
+    font-size: 8px;
+}
+
+.navbarLink {
+    position: fixed;
+    top: 0;
+}
+
+.navbarBottom {
+    position: fixed;
+    bottom: 0;
+    z-index: 3000;
+
+    width: 100%;
+    height: 80px;
+    background-color: #1a1b1e;
+    padding: 5px 30px;
+}
+
+.anchor {
+    text-align: center;
+}
+
+/** Mobile, Tablette **/
+@media only screen and (max-width: 1024px) {
+    .body {
+        margin-left: 0;
+        margin-bottom: 80px;
+        padding: 10px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .navbarLink {
+        display: none;
+    }
+}
+
+/** Ordinateur **/
+@media only screen and (min-width: 1024px) {
+    .body {
+        margin-left: 80px;
+        margin-bottom: 0;
+        padding: 10px 20px;
+    }
+
+    .navbarBottom {
+        display: none;
+    }
+}
