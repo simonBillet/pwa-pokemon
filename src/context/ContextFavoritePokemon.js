@@ -1,4 +1,4 @@
-import React from 'react';
+/*mport React from 'react';
 
 const FavoritePokemonContext = React.createContext();
 
@@ -37,3 +37,4 @@ const FavoritePokemonProvider = ({ children }) => {
 }
 
 export { FavoritePokemonProvider, FavoritePokemonContext as default };
+*/

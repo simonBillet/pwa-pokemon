@@ -35,6 +35,7 @@ function Types() {
               if(i !== 18) {
                 return <SectionType key={i} type={element}/>
               }
+              return <></>
             })
           }
         </ListContainer>

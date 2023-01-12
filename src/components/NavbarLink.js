@@ -52,7 +52,7 @@ export function NavbarMinimalColored({links}) {
         setActive(index);
       }
     });
-  },[]);
+  },[links]);
 
   const navbarLinks = links.map((link, index) => (
     <NavbarLink
