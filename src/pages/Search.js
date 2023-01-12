@@ -1,15 +1,15 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import SectionPokemon from "./../components/section/pokemon/SectionPokemon";
 import Header from "../components/Header";
 import {Group, Input, Loader, Space, Button} from "@mantine/core";
 import {IconSearch} from "@tabler/icons";
 
 function Search() {
-  const inputSearch = useRef(null);
-  const [loader, setLoader] = useState(true);
-  const [invalidSearch, setInvalidSearch] = useState(false);
-  const [searchPokemon, setSearchPokemon] = useState(getRandomInt(904));
-  const [idPokemonSelected, setIdPokemonSelected] = useState(searchPokemon);
+  const inputSearch = React.useRef(null);
+  const [loader, setLoader] = React.useState(true);
+  const [invalidSearch, setInvalidSearch] = React.useState(false);
+  const [searchPokemon, setSearchPokemon] = React.useState(getRandomInt(904));
+  const [idPokemonSelected, setIdPokemonSelected] = React.useState(searchPokemon);
 
   function getRandomInt(max) {
     return Math.floor((Math.random() * max + 1));

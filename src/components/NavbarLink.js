@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Navbar, Center, Tooltip, UnstyledButton, createStyles, Stack, Avatar } from '@mantine/core';
 
 const useStyles = createStyles((theme) => ({
@@ -44,7 +44,7 @@ function NavbarLink({ icon: Icon, label, path, active, onClick }) {
 }
 
 export function NavbarMinimalColored({links}) {
-  const [active, setActive] = useState();
+  const [active, setActive] = React.useState();
 
   React.useEffect(() => (
     links.forEach(function(data) {

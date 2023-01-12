@@ -1,12 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Header from "../components/Header";
 import styled from "styled-components";
 import SectionType from "../components/section/type/SectionType";
 import { Loader } from '@mantine/core';
 
 function Types() {
-  const [loader, setLoader] = useState(true);
-  const [response, setResponse] = useState({});
+  const [loader, setLoader] = React.useState(true);
+  const [response, setResponse] = React.useState({});
 
   React.useEffect(() => {
     fetch("https://pokeapi.co/api/v2/type/")

@@ -1,13 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Image, Progress, Card, Text, Badge, Group, Space} from "@mantine/core";
 import SectionPokemonLoader from "./SectionPokemonLoader";
 import { IconHeart, IconHeartPlus } from "@tabler/icons";
 import { addFavorite, removeFavorite, isFavorite} from "../../../services/Favorites";
 
 function SectionPokemon({url}) {
-  const [loader, setLoader] = useState(true);
-  const [favorite, setFavorite] = useState(false);
-  const [pokemon, setPokemon] = useState({});
+  const [loader, setLoader] = React.useState(true);
+  const [favorite, setFavorite] = React.useState(false);
+  const [pokemon, setPokemon] = React.useState({});
 
   const addFav = () => {
     addFavorite(id);
