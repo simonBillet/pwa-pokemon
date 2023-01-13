@@ -1,6 +1,8 @@
 # pwa-pokemon
 L'application doit permetre de connaitre les informations de bases sur tous les pokémons existants.
 
+Lien du site de déploiement : [lien](https://pwa-pokemon.netlify.app/)
+
 ## Lancement du projet
 Pour lancer le projet il suffit de le récupérer sur sa machine et de 
 faire les 2 commandes suivantes :
